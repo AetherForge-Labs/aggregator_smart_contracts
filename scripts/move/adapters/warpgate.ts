@@ -1,4 +1,4 @@
-import { deployAdapter } from "../../../utils";
+import { deployAdapter } from "../../utils";
 
 const networkName = "move";
 const contractName = "PancakeV3Adapter";
