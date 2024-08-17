@@ -1,0 +1,17 @@
+const adapters = [
+  "0xFb29F23A75E1544D7F4a561898AbaCa1ec7A9405",
+  "0x7dcA51254B154f55760120D3f046dED441cB6D9a",
+  "0x003b85576780c058793804745Ff68ea96CfC1394",
+];
+const trustedTokens = [
+  "0x6f14C02Fc1F78322cFd7d707aB90f18baD3B54f5",
+  "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+];
+const wnative = "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14";
+
+module.exports = [
+  adapters,
+  trustedTokens,
+  "0xa95eB8aB1f4eb5367D35BDbBA577Dbcd6c7b8701",
+  wnative,
+];

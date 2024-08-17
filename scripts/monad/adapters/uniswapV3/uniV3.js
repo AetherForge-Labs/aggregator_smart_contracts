@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const utils_1 = require("../../../../utils");
+const { factory, quoter } = utils_1.addresses.monad.uniV3;
+const networkName = "monad";
+const contractName = "UniswapV3Adapter";
+const tags = ["uniswapV3"];
+const name = contractName;
+const gasEstimate = 300000;
+const quoterGasLimit = 300000;
+const defaultFees = [500, 3000, 10000];
+const args = [name, gasEstimate, quoterGasLimit, quoter, factory, defaultFees];
+exports.default = (0, utils_1.deployAdapter)(networkName, tags, contractName, contractName, args);

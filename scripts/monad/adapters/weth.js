@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const utils_1 = require("../../../utils");
+const { WETH } = utils_1.addresses.monad.assets;
+const networkName = "monad";
+const tags = ["weth"];
+const name = "WETHAdapter";
+const contractName = "WNativeAdapter";
+const gasEstimate = 80000;
+const wnative = WETH;
+const args = [wnative, gasEstimate];
+exports.default = (0, utils_1.deployAdapter)(networkName, tags, name, contractName, args);
